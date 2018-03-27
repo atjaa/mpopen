@@ -1,0 +1,10 @@
+<!--pages/index/booktype.wxml-->
+<view class="menu_container">
+    <view class="menu_item" wx:for="{{menus}}" wx:key="{{id}}">
+    <navigator url="/pages/index/booklist?title={{item.name}}&typeid={{item.typeid}}" hover-class="navigator-hover">
+      <image class="menu_icon" src="{{item.url}}" />
+    </navigator>
+        
+        <text class="menu_name">{{item.name}}</text>
+    </view>
+</view>

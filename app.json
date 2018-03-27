@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/booktype",
+    "pages/logs/logs",
+    "pages/index/search",
+    "pages/index/booklist"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "行者教学相长",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"pages/images/search.png",
+      "selectedIconPath": "pages/images/search.png"
+    },{
+      "pagePath": "pages/index/booktype",
+      "text": "图书分类",
+      "iconPath": "pages/images/list.png",
+      "selectedIconPath": "pages/images/list.png"
+    }]
+  }
+}

@@ -1,0 +1,22 @@
+<!--pages/index/booklist.wxml-->
+<view class='list_container'>
+<text>{{title}}</text>
+<view class='line-css'></view>
+<view class="table">
+  <block wx:for="{{booklist}}" wx:key="{{id}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">《{{item.bookname}}》</view>
+      <view class="td">
+        <text selectable='true'>{{item.pan}}</text>
+      </view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">《{{item.bookname}}》</view>
+      <view class="td">
+        <text selectable='true'>{{item.pan}}</text>
+      </view>
+    </view>
+  </block>
+  </view>
+</view>
+

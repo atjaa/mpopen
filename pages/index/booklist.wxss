@@ -1,0 +1,20 @@
+/* pages/index/booklist.wxss */
+.list_container{
+  align-items: center;
+  margin: 20rpx 20rpx 20rpx 20rpx;   
+  z-index: 2;  
+}
+.line-css {
+    height: 1px;
+    background: #888;
+}
+.table {
+  border: 0px solid darkgray;
+  margin: 0 20rpx;
+}
+.td {
+    text-align: left;
+}
+.bg-g{
+  background: #F0F0F0;
+}

@@ -1,0 +1,29 @@
+<!--pages/index/search.wxml-->
+<view class='page_row'>  
+  <view class="search">  
+    <view class="df search_arr">  
+      <icon class="searchcion" size='20' type='search'></icon>  
+      <input class="" placeholder="请输入关键字" auto-focus='true' bindinput='snameInput'/> 
+    </view>  
+  </view>  
+  <view class='sousuo' bindtap="sou">搜索</view> 
+</view>
+<scroll-view class='search-list'>
+  <view class='line-css'></view>
+  <view class="table">
+  <block wx:for="{{booklist}}" wx:key="{{id}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">《{{item.bookname}}》</view>
+      <view class="td">
+        <text selectable='true'>{{item.pan}}</text>
+      </view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">《{{item.bookname}}》</view>
+      <view class="td">
+        <text selectable='true'>{{item.pan}}</text>
+      </view>
+    </view>
+  </block>
+  </view>
+</scroll-view>
