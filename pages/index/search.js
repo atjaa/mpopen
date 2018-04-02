@@ -6,6 +6,7 @@ Page({
    */
   data: {
     booklist:[],
+    init: true,
     sname:null
   },
   snameInput:function(e){
@@ -24,7 +25,8 @@ Page({
       },
       success:function(res){
         vm.setData({
-          booklist:res.data
+          booklist:res.data,
+          init:false
         })
       }
     })

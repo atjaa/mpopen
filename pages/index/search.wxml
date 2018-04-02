@@ -25,5 +25,8 @@
       </view>
     </view>
   </block>
+  <block wx:if="{{booklist.length < 1 && !init }}">
+    <view>查询无数据，请输入其他条件</view>
+  </block>
   </view>
 </scroll-view>
